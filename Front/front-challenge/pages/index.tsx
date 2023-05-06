@@ -2,7 +2,7 @@ import { Layout } from '../components/Layout'
 import Image from 'next/image'
 import inicial from '../assets/inicial.svg'
 import Button from '../components/Button'
-const Home = () => {
+const Ind = () => {
   return (
     <Layout title={'Home'}>
       <div className='flex flex-col flex-1 items-center text-center h-full w-full bg-black'>
@@ -32,4 +32,4 @@ const Home = () => {
 
 }
 
-export default Home
+export default Ind
