@@ -74,7 +74,6 @@ Backend
     </td>
      <td align="center">
       <a href="https://www.linkedin.com/in/vitor-moura-de-oliveira/">
-        <img src="https://avatars.githubusercontent.com/u/64558682?v=4" width="100px;" alt="Elias Biondo profile image"/><br>
         <sub>
           <b> Vitor Moura de Oliveira </b>
         </sub>
