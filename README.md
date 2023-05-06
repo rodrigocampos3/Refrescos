@@ -6,6 +6,7 @@ Projeto desenvolvido no hackaton do inteli blockchain
 
 ## Solução
 
+Plataforma que permite consumidores ganhem cashback em Token de carbono proporcional à sustentabilidade do produto sendo consumido.
 
 ## Estrutura de Pastas
 
