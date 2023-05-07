@@ -19,8 +19,8 @@ const finalizar = () => {
 							Confirmação de transferência
 						</h3>
 					</div>
-					<div className="mt-[10%] border-gray-500 rounded-2xl text-white">
-						<div className="  p-4">
+					<div className="mt-[10%] border-gray-500 rounded-2xl text-white text-left">
+						<div className="p-6">
 							<p>Pagamento</p>
 							<hr className="my-2 border-b border-gray-500" />
 							<p>Transferência</p>
