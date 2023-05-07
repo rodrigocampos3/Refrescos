@@ -8,8 +8,13 @@ import Input from '../../components/input'
 const Home = () => {
     return (
         <Layout title={'Home'}>
-            <div className='flex flex-col flex-1 items-center text-center h-full w-full bg-black'>
-                <div className='mt-[30%] w-full px-6'>
+            <div className='flex flex-col flex-1 items-center text-center h-full w-full bg-[0F0F0F]'>
+                <div className='mt-[15%] w-full px-6'>
+                    <div className=' text-[#fff] text-md mx-auto px-7 text-center'>
+                        <h3 >Cadastre-se</h3>
+                    </div>
+                    <Input  type="nome" placeholder="Nome" />
+                    <Input type="cpf" placeholder="CPF" />
                     <Input type="e-mail" placeholder="Digite seu Email" />
                     <Input type="password" placeholder="Senha" />
                     <Input type="password" placeholder="Confirmar senha" />
