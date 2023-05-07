@@ -48,7 +48,7 @@ const Transferencia = () => {
             </span>
             <Input
               type="text"
-              className="rounded-lg bg-[0F0F0F] px-4 py-2 text-white"
+              className="rounded-lg bg-[#1E1E1E] px-5 py-3 text-white"
             />
             <div className="inline-block rounded-full bg-[#468C19] p-2">
               <a href="/transfer"><Image
@@ -64,7 +64,7 @@ const Transferencia = () => {
             </span>
             <Input
               type="text"
-              className="rounded-lg bg-[0F0F0F] px-4 py-2 text-white"
+              className="rounded-lg bg-[#1E1E1E] px-5 py-3 text-white"
             />
           </div>
         </div>

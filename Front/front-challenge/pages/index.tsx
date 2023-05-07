@@ -11,11 +11,10 @@ const Ind = () => {
 				</div>
 				<div className="px-3 text-left">
 					<p className="text-[48px] font-bold leading-[50px] text-[#6EDA2A]">
-						Pequenas ações mudam o mundo.
+						Cashback em tokens de carbono.
 					</p>
 					<p className="pt-3 text-lg text-[#8A929A]">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do.
+						Echos. Atitudes que propagam. 
 					</p>
 					<div className="mt-20 text-center">
 						<a href="/cadastro"><Button text="Crie uma nova conta" /></a>

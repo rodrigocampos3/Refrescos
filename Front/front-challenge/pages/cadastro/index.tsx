@@ -65,10 +65,10 @@ const Home = () => {
           <div className=' text-[#fff] text-md mx-auto px-7 text-center'>
             <h3>Cadastre-se</h3>
           </div>
-          <Input name='nome' type="text" placeholder="Nome" value={name} onChange={handleNameChange} />
-          <Input name='cpf' type="text" placeholder="CPF" value={cpf} onChange={handleCpfChange} />
-          <Input name='email' type="email" placeholder="Digite seu Email" value={email} onChange={handleEmailChange} />
-          <Input name='senha' type="password" placeholder="Senha" value={password} onChange={handlePasswordChange} />
+          <Input className="bg-[#1E1E1E]" name='nome' type="text" placeholder="Nome" value={name} onChange={handleNameChange} />
+          <Input className="bg-[#1E1E1E]" name='cpf' type="text" placeholder="CPF" value={cpf} onChange={handleCpfChange} />
+          <Input className="bg-[#1E1E1E]" name='email' type="email" placeholder="Digite seu Email" value={email} onChange={handleEmailChange} />
+          <Input className="bg-[#1E1E1E]" name='senha' type="password" placeholder="Senha" value={password} onChange={handlePasswordChange} />
         </div>
         <div className='mt-10 text-[#8FA2B7] text-sm mx-7 px-2 text-left'>
           <p>Ao prosseguir, você concorda com estes <span className='text-[#468C19]'>Termos e Condições.</span> </p>
