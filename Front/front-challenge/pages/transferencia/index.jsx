@@ -2,7 +2,6 @@ import { Layout } from "../../components/Layout";
 import Image from "next/image";
 import Button2 from "../../components/Button2";
 import Input from "../../components/input";
-import ReactMarkdown from "react-markdown";
 
 const transferencia = () => {
 	return (

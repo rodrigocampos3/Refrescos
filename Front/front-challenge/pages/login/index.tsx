@@ -12,8 +12,8 @@ const Home = () => {
 					<div className=" text-md mx-auto px-10 text-center text-[#fff]">
 						<h3 className="text-lg font-bold">Acesse sua conta</h3>
 					</div>
-					<Input type="e-mail" placeholder="Email" />
-					<Input type="password" placeholder="Senha" />
+					<Input className="border border-grey bg-[#1E1E1E]" type="e-mail" placeholder="Email" />
+					<Input className="border border-grey bg-[#1E1E1E]" type="password" placeholder="Senha" />
 				</div>
 				<div className="mt-10 w-full px-10">
 					<Button2 text="Entrar" />
