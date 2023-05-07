@@ -10,7 +10,7 @@
 
 ## Solução
 
-Uma plataforma inovadora que permite aos consumidores ganharem cashback em Token de carbono de forma proporcional à sustentabilidade do produto que está sendo consumido. Essa solução visa incentivar escolhas mais conscientes e sustentáveis, contribuindo para a redução das emissões de carbono e, consequentemente, para um futuro mais sustentável.
+Uma plataforma inovadora, conectada a rede da Hathor, (proporiocnando alta escalabiliade) que permite aos consumidores ganharem cashback em Token de carbono, utilizando os tokens de crédito de Carbono da GEAP, de forma proporcional à sustentabilidade do produto que está sendo consumido. Essa solução visa incentivar escolhas mais conscientes e sustentáveis, contribuindo para a redução das emissões de carbono e, consequentemente, para um futuro mais sustentável. 
 
 ## Proposta de valor
 
@@ -61,8 +61,7 @@ Ameaça
   - Contribuir para a redução das emissões de carbono e, consequentemente, para um futuro mais sustentável;
   - Ganhar cashback em Token de carbono para gastar em outras compras ou investir em ações sustentáveis.
 
-
-  > ### Persona 2
+> ### Persona 2
     * Nome: João Carlos
     * Idade: 40 anos
     * Profissão: Empresário
@@ -84,9 +83,6 @@ Ameaça
       - Atrair e fidelizar consumidores que valorizam a sustentabilidade e estão dispostos a pagar mais por produtos sustentáveis;
       - Contribuir para a redução das emissões de carbono e, consequentemente, para um futuro mais sustentável;
       - Ganhar visibilidade e reconhecimento no mercado como uma empresa que valoriza a sustentabilidade e investe em soluções sustentáveis.
-
-
-
  
  
 ## Próximos passos
@@ -99,11 +95,11 @@ Já em relação à diversificação de produtos, a plataforma pode buscar expan
 
 A longo prazo, a plataforma têm como objetivo principal se tornar uma referência no mercado de cashback em Tokens de carbono, contribuindo para a mudança de comportamento dos consumidores e para a promoção de um futuro mais sustentável. Para isso, é importante manter um diálogo constante com seus usuários e parceiros, identificando novas oportunidades de crescimento e se adaptando às necessidades do mercado.
 
-No segmento técnico e do ponto de vista no escopo a ser atendido pelo projeto, as principais funcionalidades a serem adicionada, seriam:
+No segmento técnico e dentro do escopo a ser atendido pelo projeto, as principais funcionalidades a serem adicionadas, seriam:
 
-- Criar solução como extensão no navegador.
-- Definir critérios oficiais no algoritmo de cashback que sejam menos subjetivos.
-- Bridge entre diferentes redes na blockchain (agregação de mais criptomoedas)
+- Criar solução como extensão no navegador;
+- Definir critérios oficiais no algoritmo de cashback;
+- Bridge entre diferentes redes na blockchain (agregação de mais criptomoedas).
 
 
 ## Interface e prototipação
@@ -126,9 +122,60 @@ Backend
 - SQLite
 - Hathor Network API
 
+
+## Estrutura de Pastas
+
+```
++
+|---- 📂 Back
+|     |---- app.js    
+|     |---- home.html
+|---- 📂 Front                   
+|     |---- 📂 front-challenge
+|           |---- 📂 .next
+|           |---- 📂 assets
+|           |---- 📂 components
+|           |---- 📂 node_modules
+|           |---- 📂 pages 
+|                 |---- api
+|                 |---- cadastro
+|                 |---- finalizar
+|                 |---- home
+|                 |---- home
+|                 |---- login
+|                 |---- transferencia
+|---- 📂 Contracts
+|     |---- Vault.sol
+|           |---- 📂 public
+|           |---- 📂 styles
++---- README   
+```
+
+
 ## Instalação 
 
+### Configurando o ambiente de desenvolvimento da Plataforma
+
+  - Clone o repositório da plataforma Hathor Network:
+
+   ```
+    git clone https://github.com/rodrigocampos3/Refrescos.git 
+
+  ```
+
+  - Abra a pasta em uma IDE de sua escolha e rode os seguintes, respectivamente, comandos no terminal:
+
+  ```
+    CD front
+    CD front-challenge
+    Npm install
+    Npm install i axios
+    Npm run dev
+
+  ```
+
 ### Configurando o ambiente de desenvolvimento da plataforma Hathor Network
+
   * Para começar a desenvolver na plataforma Hathor Network, você precisará configurar algumas ferramentas e bibliotecas. Este guia descreve os passos necessários para configurar o ambiente de desenvolvimento.
     - Antes de prosseguir com a configuração, certifique-se de ter instalado em seu computador:
 
@@ -174,6 +221,8 @@ https://coinsbench.com/token-bridge-with-solidity-76ee93d6c160
 
 ## Vídeo 
 
+Link do vídeo: https://youtu.be/f4LXS5gzn_U
+
 
 ## Referências:
 
@@ -192,33 +241,6 @@ HATHOR NETWORK. Hathor Docs. Disponível em: https://docs.hathor.network/. Acess
 HATHOR NETWORK. Hathor Wallet. Disponível em: https://wallet-headless.docs.hathor.network/. Acesso em: 07 maio 2023.
 
 COINSBENCH. Token Bridge with Solidity. Disponível em: https://coinsbench.com/token-bridge-with-solidity-76ee93d6c160. Acesso em: 07 maio 2023.
-
-
-## Estrutura de Pastas
-
-```
-+
-|---- 📂 Back
-|     |---- app.js    
-|     |---- home.html
-|---- 📂 Front                   
-|     |---- 📂 front-challenge
-|           |---- 📂 .next
-|           |---- 📂 assets
-|           |---- 📂 components
-|           |---- 📂 node_modules
-|           |---- 📂 pages 
-|                 |---- api
-|                 |---- cadastro
-|                 |---- finalizar
-|                 |---- home
-|                 |---- home
-|                 |---- login
-|                 |---- transferencia
-|           |---- 📂 public
-|           |---- 📂 styles
-+---- README   
-```
 
 ## Equipe
 
