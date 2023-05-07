@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market</title>
+</head>
+<body>
+    <h1>Market</h1>
+    <label for="categorias">Categorias:</label>
+    <select id="categorias" onchange="carregarProdutos()">
+        <option value="">Selecione uma categoria</option>
+    </select>
+    <br><br>
+    <label for="produtos">Produtos:</label>
+    <select id="produtos">
+        <option value="">Selecione um produto</option>
+    </select>
+    <br><br>
+    <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+    <hr>
+    <h1>Carrinho de Compra</h1>
+    <div id="carrinho"></div>
+    <br>
+    Total: R$ <span id="total">0</span>
+    <br><br>
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
+    <script>
+        // Carrega as categorias do banco de dados
+        function carregarCategorias() {
+            let categorias = document.getElementById("categorias");
+            fetch("/market/categories")
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(categoria => {
+                        let option = document.createElement("option");
+                        option.text = categoria.category;
+                        categorias.add(option);
+                    });
+                });
+        }
+
+        // Carrega os produtos da categoria selecionada
+        function carregarProdutos() {
+            let categorias = document.getElementById("categorias");
+            let produtos = document.getElementById("produtos");
+            produtos.innerHTML = "<option value=''>Selecione um produto</option>";
+            if (categorias.value != "") {
+                fetch("/market/products/" + categorias.value)
+                    .then(response => response.json())
+                    .then(data => {
+                        data.forEach(produto => {
+                            let option = document.createElement("option");
+                            option.text = produto.name;
+                            option.setAttribute("data-preco", produto.price);
+                            option.setAttribute("data-level", produto.level);
+                            produtos.add(option);
+                        });
+                    });
+            }
+        }
+let totalCashback = 0;
+
+function adicionarAoCarrinho() {
+    let produtos = document.getElementById("produtos");
+    if (produtos.value != "") {
+        let carrinho = document.getElementById("carrinho");
+        let nome = produtos.value;
+        let preco = produtos.options[produtos.selectedIndex].getAttribute("data-preco");
+        let level = produtos.options[produtos.selectedIndex].getAttribute("data-level");
+        let item = document.createElement("div");
+        let cashBack = parseInt(preco) * (parseInt(level) / 100);
+        item.innerHTML = nome + " - R$ " + preco + " - " + level;
+        carrinho.appendChild(item);
+        atualizarTotal(parseFloat(preco));
+        atualizarTotalCashback(cashBack);
+    }
+}
+
+// Atualiza o total do carrinho
+function atualizarTotal(preco) {
+    let total = document.getElementById("total");
+    total.innerHTML = (parseFloat(total.innerHTML) + preco).toFixed(2);
+}
+
+// Atualiza o total de cashback
+function atualizarTotalCashback(cashBack) {
+    totalCashback += cashBack;
+}
+
+// Finaliza a compra
+function finalizarCompra() {
+    console.log("Valor total de cashback: " + totalCashback.toFixed(2));
+    // Não faz nada
+}
+
+        // Carrega as categorias ao carregar a página
+        carregarCategorias();
+    </script>
+</body>
+</html>
