@@ -62,23 +62,24 @@ Ameaça
   - Ganhar cashback em Token de carbono para gastar em outras compras ou investir em ações sustentáveis.
 
 > ### Persona 2
-    * Nome: João Carlos
-    * Idade: 40 anos
-    * Profissão: Empresário
 
-    * Perfil: João é um empresário que tem uma empresa que busca sempre adotar práticas sustentáveis em seus processos. Ele está sempre buscando maneiras de reduzir as emissões de carbono e melhorar a sustentabilidade de seus produtos. João está interessado em uma plataforma que ofereça cashback em Token de carbono para incentivar seus clientes a fazerem escolhas mais sustentáveis. Ele acredita que essa iniciativa pode ajudar a aumentar a conscientização dos consumidores e contribuir para a construção de um futuro mais sustentável.
+  * Nome: João Carlos
+  * Idade: 40 anos
+  * Profissão: Empresário
 
-    * Dores 
+  * Perfil: João é um empresário que tem uma empresa que busca sempre adotar práticas sustentáveis em seus processos. Ele está sempre buscando maneiras de reduzir as emissões de carbono e melhorar a sustentabilidade de seus produtos. João está interessado em uma plataforma que ofereça cashback em Token de carbono para incentivar seus clientes a fazerem escolhas mais sustentáveis. Ele acredita que essa iniciativa pode ajudar a aumentar a conscientização dos consumidores e contribuir para a construção de um futuro mais sustentável.
+
+  * Dores 
       - Dificuldade em identificar consumidores que valorizam a sustentabilidade e estão dispostos a pagar mais por produtos sustentáveis;
       - Dificuldade em medir e comunicar o impacto ambiental dos seus produtos de forma clara e objetiva;
       - Falta de incentivos para investir em soluções sustentáveis.
 
-    * Necessidades: 
+  * Necessidades: 
       - Acesso a ferramentas e tecnologias que possam medir e comunicar o impacto ambiental dos seus produtos de forma clara e objetiva;
       - Acesso a uma base de consumidores que valorizam a sustentabilidade e estão dispostos a pagar mais por produtos sustentáveis;
       - Incentivos para investir em soluções sustentáveis que possam contribuir para a redução das emissões de carbono.
 
-    * Objetivos:
+  * Objetivos:
       - Produzir e comercializar produtos mais sustentáveis e que tenham menor impacto ambiental;
       - Atrair e fidelizar consumidores que valorizam a sustentabilidade e estão dispostos a pagar mais por produtos sustentáveis;
       - Contribuir para a redução das emissões de carbono e, consequentemente, para um futuro mais sustentável;
