@@ -10,10 +10,10 @@ function BlackRectangle() {
   };
 
   return <center>
-    <div className="text-white font-rubik font-medium text-md text-2xl text-center py-4 px-8 rounded-md " 
+    <a href='/transfer'><div className="text-white font-rubik font-medium text-md text-2xl text-center py-4 px-8 rounded-md" 
       style={rectangleStyle}>
       Transferência 
-    </div>
+    </div></a>
     
     </center>;
   

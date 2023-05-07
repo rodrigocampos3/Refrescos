@@ -51,12 +51,13 @@ const Transferencia = () => {
               className="rounded-lg bg-[0F0F0F] px-4 py-2 text-white"
             />
             <div className="inline-block rounded-full bg-[#468C19] p-2">
-              <Image
+              <a href="/transfer"><Image
                 src="/icon-seta.svg"
                 alt="icon"
                 width={24}
                 height={24}
-              />
+                href="/transfer"
+              /></a>
             </div>
             <span className="font-small block text-left text-sm text-[#468C19] after:ml-0.5">
               Detalhes de recebimento
@@ -68,11 +69,11 @@ const Transferencia = () => {
           </div>
         </div>
         <div className="fixed bottom-0 left-0 right-0 mb-10 px-10">
-          <Button2
+          <a href="/finalizar"><Button2
             text="Preview"
             backgroundColor="bg-[#468C19]"
             onClick={handleClick}
-          />
+          /></a>
         </div>
         {response && (
           <div className="text-white">

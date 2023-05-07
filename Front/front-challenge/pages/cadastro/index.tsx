@@ -74,7 +74,7 @@ const Home = () => {
           <p>Ao prosseguir, você concorda com estes <span className='text-[#468C19]'>Termos e Condições.</span> </p>
         </div>
         <div className='w-full px-10 mt-10'>
-          <Button2 text='Criar conta' onClick={handleRegister} backgroundColor='bg-[#468C19]' />
+          <a href="/home"><Button2 text='Criar conta' onClick={handleRegister} backgroundColor='bg-[#468C19]' /></a>
         </div>
       </div>
     </Layout>

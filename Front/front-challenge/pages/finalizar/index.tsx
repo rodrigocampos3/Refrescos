@@ -30,7 +30,7 @@ const finalizar = () => {
 					</div>
 				</div>
 				<div className="fixed bottom-0 left-0 right-0 mb-10 px-10">
-					<Button2 text="Finalizar" />
+					<a href="/home"><Button2 text="Finalizar" /></a>
 				</div>
 			</div>
 		</Layout>
