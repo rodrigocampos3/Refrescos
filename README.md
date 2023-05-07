@@ -47,7 +47,7 @@ Uma plataforma inovadora que permite aos consumidores ganharem cashback em Token
 ## Interface e prototipação
 
 <p align="center">
-<a><img src="https://user-images.githubusercontent.com/99190451/236663113-ddba2dfc-6380-4f7c-97ce-487f50fa234c.png" alt="Cover projeto Echo" border="0"></a>
+<a><img src="https://user-images.githubusercontent.com/99190451/236663254-93c668fb-e675-4b6e-8760-9ba8222f78ce.png" alt="Cover projeto Echo" border="0"></a>
 </p>
 
 
