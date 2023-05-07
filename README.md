@@ -18,10 +18,10 @@ Uma plataforma inovadora que permite aos consumidores ganharem cashback em Token
 
 ```
 +
-|---- 📂 Back       - Express server running on charger endpoint. Handles token minting.
+|---- 📂 Back
 |     |---- app.js    
 |     |---- home.html
-|---- 📂 Front                   - Express server running on charger endpoint. Handles token minting.
+|---- 📂 Front                   
 |     |---- 📂 front-challenge
 |           |---- 📂 .next
 |           |---- 📂 assets
@@ -54,10 +54,15 @@ Uma plataforma inovadora que permite aos consumidores ganharem cashback em Token
 ## Tecnologia 
 
 Frontend
+-Next
+-Typescript
+-Tailwind
   
   
 Backend
-
+-Node.js
+-SQLite
+-Harthor
 
 ## Vídeo 
 
