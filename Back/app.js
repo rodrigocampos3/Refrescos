@@ -4,9 +4,10 @@ const sqlite3 = require('sqlite3').verbose(); // biblioteca para trabalhar com b
 
 // criando uma instância do app express
 const app = express();
-
+const cors = require('cors');
 // importando a biblioteca axios para trabalhar com requisições HTTP
 const axios = require('axios');
+app.use(cors()); // habilita o CORS
 
 // definindo a porta do servidor
 const port = 3000;
@@ -32,9 +33,9 @@ app.get('/home', (req, res) => {
 });
 
 // rota para obter o saldo do usuário
-app.get('/userBalance', (req, res) => {
-  const cpf = req.body.cpf;
-  balance = 0;
+app.get('/userBalance/:cpf', (req, res) => {
+  const cpf = req.params.cpf;
+  let balance = 0;
   // fazendo uma consulta SQL no banco de dados SQLite para obter o endereço da carteira do usuário
   db.get('SELECT addrres FROM users WHERE cpf = ?', [cpf], (err, row) => {
     if (err) {
@@ -56,15 +57,82 @@ app.get('/userBalance', (req, res) => {
         .then(response => {
           balance = response.data;
           console.log(response.data);
+          // enviando o saldo como resposta
+          res.send(balance);
         })
         .catch(error => {
           console.error(error);
+          res.status(500).send('Error getting balance');
         });
-      // enviando o saldo como resposta
-      res.send(`User balance: ${balance}`);
     }
   });
 });
+
+
+app.get('/userTransictions/:cpf', (req, res) => {
+  const cpf = req.params.cpf;
+  let balance = 0;
+  // fazendo uma consulta SQL no banco de dados SQLite para obter o endereço da carteira do usuário
+  db.get('SELECT addrres FROM users WHERE cpf = ?', [cpf], (err, row) => {
+    if (err) {
+      console.error(err.message);
+      res.status(500).send('Internal server error');
+    } else if (!row) {
+      res.status(404).send('User not found');
+    } else {
+      const adr = row.addrres;
+      // fazendo uma requisição HTTP para a API de carteira para obter o saldo da carteira do usuário
+      axios.get('http://localhost:8000/wallet/address-info', {
+        params: {
+          'address': adr
+        },
+        headers: {
+          'x-wallet-id': '1234'
+        }
+      })
+        .then(response => {
+          balance = response.data;
+          console.log(response.data);
+          // enviando o saldo como resposta
+          res.send(balance);
+        })
+        .catch(error => {
+          console.error(error);
+          res.status(500).send('Error getting balance');
+        });
+    }
+  });
+});
+
+app.get('/userTransactions/', (req, res) => {
+  let txHistory = [];
+      // fazendo uma requisição HTTP para a API de carteira para obter o histórico de transações da carteira do usuário
+      axios.get('http://localhost:8000/wallet/tx-history', {
+        params: {
+          'address': adr,
+          'limit': 0 // limit 0 significa buscar todas as transações
+        },
+        headers: {
+          'x-wallet-id': '1234'
+        }
+      })
+        .then(response => {
+          txHistory = response.data;
+          console.log(txHistory);
+          // enviando o histórico de transações como resposta
+          res.send(txHistory);
+        })
+        .catch(error => {
+          console.error(error);
+          res.status(500).send('Error getting transaction history');
+        });
+    });
+
+
+
+
+
+
 
 // rota para o login do usuário
 app.post('/login', (req, res) => {
