@@ -1,44 +1,20 @@
-// const Rectangle = () => {
-//   const rectangleStyle = {
-//     backgroundColor: 'black',
-//     border: '2px solid white',
-//     borderRadius: '25px',
-//     height: '60px',
-//     width: '380px',
-//     marginTop: '20px',
-//   };
-
-//   return <div className="text-white  py-4 px-8" style={rectangleStyle}> RFC </div>;
-// };
-
-// export default Rectangle;
+import Image from "next/image";
 
 const Rectangle = () => {
-  const rectangleStyle = {
-    backgroundColor: 'black',
-    border: '1px solid white',
-    borderRadius: '20px',
-    height: '60px',
-    width: '380px',
-    marginTop: '20px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '0px 20px'
-  };
-
   return (
-    <div className="text-white py-4 px-8" style={rectangleStyle}>
-      <div>
-        <img style={{width: '50px', height: '50px', left:'80%'}} src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="Bitcoin" />
+    <div className="flex items-center justify-between bg-black border-2 border-white rounded-3xl h-16 w-96 mt-5 px-6">
+      <div className="flex items-center">
+        <div className="relative w-8 h-8">
+          <Image src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="Bitcoin" layout="fill" />
+        </div>
       </div>
-      <div>
-        <p className="font-bold">RFC</p>
-        <p className="font-bold">REFRESCO</p>
+      <div className="flex flex-col justify-center mr-auto">
+        <p className="font-bold text-white">RFC</p>
+        <p className="font-bold text-white">REFRESCO</p>
       </div>
-      <div>
-        <p className="font-bold">0.0019873</p>
-        <p className="font-light">BTGDol</p>
+      <div className="flex flex-col justify-center ml-auto">
+        <p className="font-bold text-white">0.0019873</p>
+        <p className="font-light text-white">BTGDol</p>
       </div>
     </div>
   );

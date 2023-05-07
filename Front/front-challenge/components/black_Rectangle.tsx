@@ -5,7 +5,7 @@ function BlackRectangle() {
     backgroundColor: 'black',
     width: '200px',
     height: '65px',
-    borderRadius: '10px',
+    borderRadius: '2px',
     marginTop: '50px',
   };
 
